@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/gameInfo.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Tetris | Game</title>
+</head>
+
+<body onload="getName();updateTableElement()">
+<nav class="navbar bg-dark text-white custom-nav">
+    <div class="order-0">
+        <span class="h4">Tetris Game</span>
+    </div>
+    <span class="navbar-text">
+        made by: Облизанов Александр, гр. 8382
+    </span>
+</nav>
+
+<div class="container col-12">
+    <div class="welcome h1 d-flex align-items-center justify-content-center">Приготовились...</div>
+    <div class="row">
+        <div class="col p-3 col-12 col-sm-3">
+            <div class="col col-12">
+                <div class="col card p-4 custom-paper d-flex flex-column col-12">
+                    <div class="mb-3">
+                        <span class="h4 font-weight-bold" id="login"></span>
+                        <span class="h5"> решил поиграть в тетрис :)</span>
+                    </div>
+                    <div>
+                        <span class="h5">Очки:</span>
+                        <span class="h4 font-weight-bold" id="score"></span>
+                    </div>
+                    <div>
+                        <button class="btn btn-danger custom-btn mt-3" onclick="window.location='index.html'">
+                            Выйти
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 mt-3">
+                <div class="col card p-4 custom-paper d-flex flex-column col-12">
+                    <div class="mb-3 d-flex justify-content-center">
+                        <span class="h5">Таблица рекордов:</span>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div id="table"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col p-3 col-12 col-sm-9">
+            <div class="row card p-3 col-12 custom-paper d-flex flex-row justify-content-center">
+                <div class="col-auto pr-5 d-flex flex-column align-items-end">
+                    <div class="mb-3">
+                        <span class="h5">Следующая фигура:</span>
+                    </div>
+                    <canvas id="preview" width="90px" height="120px" class="border-0"></canvas>
+                </div>
+                <div class="col-auto d-flex justify-content-center">
+                    <canvas id="field" width="450px" height="600px" class="border-0"></canvas>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src='../js/data.js'></script>
+    <script type="text/javascript" src='../js/gameLogic.js'></script>
+    <script type="text/javascript" src='../js/engine.js'></script>
+
+</div>
+</body>

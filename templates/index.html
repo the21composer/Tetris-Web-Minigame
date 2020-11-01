@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/javascript" src="../js/login.js"></script>
+    <title>Tetris | Login</title>
+</head>
+
+<body>
+<nav class="navbar bg-dark text-white custom-nav">
+    <div class="order-0">
+        <span class="h4">Tetris Game</span>
+    </div>
+    <span class="navbar-text">
+        made by: Облизанов Александр, гр. 8382
+    </span>
+</nav>
+
+<div class="column p-3 d-flex flex-column align-items-center">
+    <div class="card p-3 custom-paper d-flex flex-column align-items-center col-12 col-sm-4">
+        <p class="h3 mb-5">Добро пожаловать в тетрис!</p>
+        <div class="d-flex flex-column align-items-center col-12">
+            <div class="form-group mb-2 col-12">
+                <label class="mb-2 h5">Введите имя</label>
+                <input type="text" class="form-control custom-textform" id="login">
+            </div>
+            <button class="btn btn-primary custom-btn go-btn mt-4 mb-3 p-3" onclick="setName()">Начать игру!</button>
+        </div>
+    </div>
+</div>
+</body>
